@@ -30,22 +30,6 @@ public class Person {
         this.age = age;
     }
 
-//    public Person(String name, String favColor) {
-//        this.name = name;
-//        this.favColor = favColor;
-//    }
-//
-//    public Person(String name, double weight) {
-//        this.name = name;
-//        this.weight = weight;
-//    }
-//
-//    public Person(String name, int age, String favFood) {
-//        this.name = name;
-//        this.favFood = favFood;
-//    }
-
-
     public String getName() {
         return name;
     }
