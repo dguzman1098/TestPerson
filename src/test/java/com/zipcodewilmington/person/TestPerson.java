@@ -7,11 +7,12 @@ import org.junit.Test;
  * Created by leon on 2/12/18.
  */
 public class TestPerson {
+
     @Test
     public void testDefaultConstructor() {
         // Given
-        String expectedName = "";
-        Integer expectedAge = Integer.MAX_VALUE;
+        String expectedName = null;
+        Integer expectedAge = 0;
 
         // When
         Person person = new Person();
@@ -95,4 +96,78 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetFavColor() {
+        // Given
+        Person person = new Person();
+        String expected = "blue";
+
+        // When
+        person.setFavColor(expected);
+
+        // Then
+        String actual = person.getFavColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetEyeColor() {
+        // Given
+        Person person = new Person();
+        String expected = "brown";
+
+        // When
+        person.setEyeColor(expected);
+
+        // Then
+        String actual = person.getEyeColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetWeight() {
+        // Given
+        Person person = new Person();
+        double expected = 150.0;
+
+        // When
+        person.setWeight(expected);
+
+        // Then
+        double actual = person.getWeight();
+        Assert.assertEquals(expected, actual, 0.001);
+    }
+
+    @Test
+    public void testSetFavFood() {
+        // Given
+        Person person = new Person();
+        String expected = "tacos";
+
+        // When
+        person.setFavFood(expected);
+
+        // Then
+        String actual = person.getFavFood();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetShoeSize() {
+        // Given
+        Person person = new Person();
+        double expected = 7;
+
+        // When
+        person.setShoeSize(expected);
+
+        // Then
+        double actual = person.getShoeSize();
+        Assert.assertEquals(expected, actual, 0.01);
+    }
+
+
+
+
 }
