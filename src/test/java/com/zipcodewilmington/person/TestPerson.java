@@ -11,11 +11,11 @@ public class TestPerson {
     @Test
     public void testDefaultConstructor() {
         // Given
-        String expectedName = null;
-        Integer expectedAge = 0;
+        String expectedName = "";
+        Integer expectedAge = Integer.MAX_VALUE;
 
         // When
-        Person person = new Person();
+        Person person = new Person(expectedName, expectedAge);
 
         // Then
         String actualName = person.getName();
